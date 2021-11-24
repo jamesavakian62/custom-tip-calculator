@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html>
+    <title>James L. Avakian</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style1.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-xlarge w3-button"><b>James L.</b> Avakian</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item  w3-xlarge w3-button">Calculator</a>
+            <a href="projects.html" class="w3-bar-item  w3-xlarge w3-button">Cellphone </a>
+            <a href="about.html" class="w3-bar-item  w3-xlarge w3-button">About</a>
+            <a href="contact.html" class="w3-bar-item  w3-xlarge w3-button">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <link rel="stylesheet" href="style1.css">
+</header>
+
+<body>
+
+    <div style="height: 80% ; width: 400px; border: 1px solid; text-align: center;">
+        <h2>Cellphone Size</h2>
+     
+
+      <!-- <img id="name" src="./images/james.png" alt=""> -->
+      <img id="mode" src="./images/icon-moon.svg" alt="">
+      <br> <br>   <img id="mode2"   src="./images/james.png" height="100px" width="100" alt="">  <br> <br> 
+
+      <!-- <img id='mode2' src="./images/me1.png" alt=""> -->
+      <!-- <img class='mode3' src="./images/me1.png" alt=""> -->
+  
+      <div class="container">
+          
+          <div class="left">
+              <div class="bill">
+                  <p class="label">Bill</p>
+  
+                  <div class="input_container">
+                      <img src="./images/icon-dollar.svg" alt="">
+                      <input id="bill-input" type="text" placeholder="0" >
+                  </div>
+  
+              </div>
+  
+              <div class="tip">
+                  <!-- HW STYLE THE TIP BUTTONS DIV TO LOOK LIKE THE DESIGN -->
+                  <!-- TWO WAYS FLEX BOX -->
+                  <!-- display: grid -->
+  
+                  
+                  <p>Select Tip %</p>
+  
+                  <div class="buttons">
+                      <button class="button">5%</button>
+                      <button class="button">10%</button>
+                      <button class="button">15%</button>
+                      <button class="button">25%</button>
+                      <button class="button">50%</button>
+                      <input id = "custom-tip" type="number" placeholder="Custom" ></input>
+                  </div>
+  
+   
+              </div>
+  
+              <div class="people">
+  
+                  <p id="label_people">Number of people</p>
+  
+                  <div class="input_container">
+                      <img src="./images/icon-person.svg" alt="">
+                      <input id="number-of-people" type="text" placeholder="0">
+  
+                  </div>
+  
+              </div>
+          </div>
+  
+          <div class="right">
+  
+              <div class="display">
+  
+                  <div class="amount">
+                      <div class="tip_per">
+                          <p>Tip Amount</p>
+                          <p>/person</p>
+                      </div>
+                      
+                      <h1 id = "tip-amount">$0.00</h1>
+                  </div>
+  
+                  <div class="amount">
+                      <div class="total_per">
+                          <p>Total Amount</p>
+                          <p>/person</p>
+                      </div>
+  
+                      <h1 id = "total-amount">$0.00</h1>
+                  </div>
+              </div>
+  
+              <div class="reset">
+                  <button id="reset-button">RESET</button>
+              </div>
+          </div>
+         
+      </div>
+     
+      <script src="script.js"></script>
+  
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-16">
+     <p id="copy">(c) 2021, Calculator, James L. Avakian, All rights reserved.</p>
+  </footer>
+</div>
+
+  </body>
+  </html>

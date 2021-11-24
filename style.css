@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Space Mono", monospace;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(40, 84%, 70%);
+    font-family:  "Space Mono", monospace;
+
+}
+#name{
+    height: 15%;
+    width: 15%;
+}
+.mode, .mode2{
+    height: 25%;
+    width: 25%;
+}
+
+.container {
+     background-color: rgb(146, 158, 187);
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+    font-family:  "Space Mono", monospace;
+}
+
+.left {
+    width: 350px;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family:  "Space Mono", monospace;
+}
+
+.bill {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+}
+
+.input_container {
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.input_container input {
+    width: 100%;
+    background:none;
+    border: none;
+    outline: none;
+    text-align: end;
+    padding: 15px;
+}
+
+.tip {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px
+}
+
+.buttons button {
+    width: 100px;
+    height: 35px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-family:  "Space Mono", monospace;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.buttons button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#custom-tip {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: larger;
+    font-size: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family:  "Space Mono", monospace;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.people {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.right {
+    width: 350px;
+    height: 100%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px ;
+    color: white;
+    
+}
+
+.display {
+    /* background-color: bisque; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tip-amount {
+ color: hsl(172, 67%, 45%);
+}
+
+#total-amount {
+    color: hsl(172, 67%, 45%);
+}
+
+.reset {
+    background-color: bisque;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.reset button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#tip-amount #total-amount .total_per{
+    font-family:  "Space Mono", monospace;
+}
+
+
+
+.amount {
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#copy{
+    font-family:  "Space Mono", monospace;
+}
+
+.center{
+    text-align: center;
+
+}
+
+
+.newspaper {
+    jusfity: left;
+    padding: 30px;
+ background-color: aliceblue;
+}
+
+@media screen 
+  
+  and (max-width: 400px) 
+   { 
+       #mode2{
+           margin: 20px;
+       }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        width: 97%;
+       position:relative; 
+       left:-1px;
+    }
+.input_container{
+   /* // height: 80%; */
+    width: 80%;
+    
+}
+.input_container input{
+    padding: 10px;
+}
+.bill, .tip {
+    margin:auto;
+}
+.bill, .people{
+    position: relative;
+    left: 10px;
+}
+.label{
+    left: -10px;
+    position: relative;
+}
+#bill-input{
+    left: 10px;
+    align-items: center;
+    position: relative;
+}
+    .buttons {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .buttons button {
+        width: 75px;
+        height: 40px;
+    }
+.left{
+    margin:0px;
+}
+    .right {
+        height:80%;
+        left: -1px;
+        position: relative;
+    }
+    #reset-button{
+        height:100%;
+    }
+    #copy{
+        font-size: 10px;
+    }
+
+    /* /////    margin: auto;   //// to center items <<<< */
+
+}
+
+}
